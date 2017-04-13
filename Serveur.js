@@ -1,22 +1,38 @@
-var http = require('http');
+var express = require ('express');
 
-var ip = '127.0.0.1';
-var port = 21210;
+var serveur = express();
 
-var server = http.createServer(
-    function(request, reseponse){
-        reseponse.statusCode = 200;
-        reseponse.setHeader('Content-Type', 'text/plain');
-        reseponse.end('wesh ma couillasse')
-    }
-);
+serveur.get("/", function(request, response){
+    response.sendFile(__dirname + "/View/index.html");
 
-server.listen(port,ip,function() {
-    console.log('la chevalière marche avant marche arrière');
 
-}
+});
 
-)
+
+serveur.listen(21210);
+
+
+
+
+// var http = require('http');
+//
+// var ip = '127.0.0.1';
+// var port = 21210;
+//
+// var server = http.createServer(
+//     function(request, reseponse){
+//         reseponse.statusCode = 200;
+//         reseponse.setHeader('Content-Type', 'text/plain');
+//         reseponse.end('wesh ma couillasse')
+//     }
+// );
+//
+// server.listen(port,ip,function() {
+//     console.log('la chevalière marche avant marche arrière');
+//
+// }
+//
+// )
 
 
 // const http = require('http');

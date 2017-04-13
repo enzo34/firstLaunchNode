@@ -1,0 +1,27 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "prise en main nodeJS",
+  "main": "Serveur.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "node Serveur.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enzo34/firstLaunchNode.git"
+  },
+"dependencies":{
+    "express":"4.15.2"
+},
+  "keywords": [
+    "wesh"
+  ],
+  "author": "Moi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enzo34/firstLaunchNode/issues"
+  },
+  "homepage": "https://github.com/enzo34/firstLaunchNode#readme"
+}
